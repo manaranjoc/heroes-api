@@ -5,6 +5,7 @@ import co.udea.heroes.api.service.impl.HeroServiceInt;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.ws.Response;
 import java.util.List;
 
 @RestController
@@ -35,5 +36,14 @@ public class HeroController {
     @PutMapping("actualizar")
     public ResponseEntity<Hero> updateHero(@RequestBody Hero hero){
         return ResponseEntity.ok(heroService.updateHero(hero));
+    }
+
+    @PostMapping("crear")
+    public ResponseEntity<Hero> addHero(@RequestBody Hero hero){
+        return ResponseEntity.ok(heroService.addHero(hero));
+    }
+    @DeleteMapping("borrrar/${id}")
+    public void deleteHero(@PathVariable String id){
+        heroService.deleteHero(id);
     }
 }

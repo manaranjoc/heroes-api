@@ -37,4 +37,12 @@ public class HeroService implements HeroServiceInt{
     public Hero updateHero(Hero hero){
         return heroRepository.save(hero);
     }
+
+    public Hero addHero(Hero hero){
+        return heroRepository.save(hero);
+    }
+
+    public void deleteHero(String id){
+        heroRepository.deleteById(id);
+    }
 }
