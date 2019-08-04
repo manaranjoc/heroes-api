@@ -1289,3 +1289,34 @@ Caused by: org.postgresql.util.PSQLException: The hostname ec2-50-19-222-129.com
 2019-08-03 21:26:30.805  WARN 26180 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-03 21:26:30.991  INFO 26180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2019-08-03 21:26:30.996  INFO 26180 --- [main] co.udea.heroes.api.App                   : Started App in 9.885 seconds (JVM running for 11.042)
+2019-08-03 22:17:49.391  INFO 2772 --- [main] co.udea.heroes.api.App                   : Starting App on manaranjoc with PID 2772 (started by Miguel in C:\Users\Miguel\Documents\Universidades\UDEA\Semestre 5\Proyecto Integrador\Semana3\API)
+2019-08-03 22:17:49.396  INFO 2772 --- [main] co.udea.heroes.api.App                   : The following profiles are active: heroku
+2019-08-03 22:17:50.402  INFO 2772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-03 22:17:50.550  INFO 2772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136ms. Found 1 repository interfaces.
+2019-08-03 22:17:50.985  INFO 2772 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d021fb0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-03 22:17:51.338  INFO 2772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-03 22:17:51.368  INFO 2772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-03 22:17:51.369  INFO 2772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-03 22:17:51.537  INFO 2772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-03 22:17:51.538  INFO 2772 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2085 ms
+2019-08-03 22:17:51.753  INFO 2772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-03 22:17:53.446  INFO 2772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-03 22:17:53.506  INFO 2772 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-03 22:17:53.571  INFO 2772 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-03 22:17:53.576  INFO 2772 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-03 22:17:53.716  INFO 2772 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-03 22:17:53.851  INFO 2772 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-08-03 22:17:53.866  INFO 2772 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2019-08-03 22:17:53.876  INFO 2772 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5d497a91
+2019-08-03 22:17:54.290  INFO 2772 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: co.udea.heroes.api.model.Hero (class must be instantiated by Interceptor)
+2019-08-03 22:17:58.397  INFO 2772 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-03 22:17:58.835  INFO 2772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-03 22:17:58.872  WARN 2772 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-03 22:17:59.070  INFO 2772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-03 22:17:59.072  INFO 2772 --- [main] co.udea.heroes.api.App                   : Started App in 10.35 seconds (JVM running for 11.714)
+2019-08-03 22:19:27.228  INFO 2772 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-03 22:19:27.228  INFO 2772 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-03 22:19:27.235  INFO 2772 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-08-03 22:20:27.122  INFO 2772 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
