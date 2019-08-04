@@ -24,7 +24,7 @@ public class HeroController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Hero> getHero(@PathVariable("id") String id){
+    public ResponseEntity<Hero> getHero(@PathVariable("id") int id){
         return ResponseEntity.ok(heroService.getHero(id));
     }
 
@@ -43,7 +43,7 @@ public class HeroController {
         return ResponseEntity.ok(heroService.addHero(hero));
     }
     @DeleteMapping("borrar/{id}")
-    public void deleteHero(@PathVariable String id){
+    public void deleteHero(@PathVariable int id){
         heroService.deleteHero(id);
     }
 }

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface HeroRepository extends JpaRepository<Hero, String> {
+public interface HeroRepository extends JpaRepository<Hero, Integer> {
 
     @Query("SELECT h from Hero h WHERE h.name like %:term%")
     public List<Hero> searchByTerm(@Param("term") String term);

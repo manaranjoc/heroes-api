@@ -7,9 +7,9 @@ import java.util.List;
 public interface HeroServiceInt {
 
     public List<Hero> getHeroes();
-    public Hero getHero(String id);
+    public Hero getHero(int id);
     public List<Hero> searchHeroes(String term);
     public Hero updateHero(Hero hero);
     public Hero addHero(Hero hero);
-    public void deleteHero(String id);
+    public void deleteHero(int id);
 }

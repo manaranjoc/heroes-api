@@ -20,7 +20,7 @@ public class HeroService implements HeroServiceInt{
         return heroRepository.findAll();
     }
 
-    public Hero getHero(String id){
+    public Hero getHero(int id){
         Optional<Hero> posibleHero = heroRepository.findById(id);
         if(posibleHero.isPresent()){
             return posibleHero.get();
@@ -42,7 +42,7 @@ public class HeroService implements HeroServiceInt{
         return heroRepository.save(hero);
     }
 
-    public void deleteHero(String id){
+    public void deleteHero(int id){
         heroRepository.deleteById(id);
     }
 }
