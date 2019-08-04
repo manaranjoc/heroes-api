@@ -42,7 +42,7 @@ public class HeroController {
     public ResponseEntity<Hero> addHero(@RequestBody Hero hero){
         return ResponseEntity.ok(heroService.addHero(hero));
     }
-    @DeleteMapping("borrrar/${id}")
+    @DeleteMapping("borrar/{id}")
     public void deleteHero(@PathVariable String id){
         heroService.deleteHero(id);
     }

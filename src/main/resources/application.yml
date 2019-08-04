@@ -1,7 +1,5 @@
 # Server properties
 server:
-  servlet:
-    context-path: /heroes-api
   port: 8080
 # Spring properties
 spring:
