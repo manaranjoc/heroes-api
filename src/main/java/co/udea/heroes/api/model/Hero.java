@@ -14,6 +14,8 @@ public class Hero {
     @Column(name="nombre")
     private String name;
 
+    public Hero(){};
+
     public Hero(String id, String name) {
         this.id = id;
         this.name = name;
