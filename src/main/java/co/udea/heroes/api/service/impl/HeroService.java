@@ -33,4 +33,8 @@ public class HeroService implements HeroServiceInt{
     public List<Hero> searchHeroes(String term){
         return heroRepository.searchByTerm(term);
     }
+
+    public Hero updateHero(Hero hero){
+        return heroRepository.save(hero);
+    }
 }

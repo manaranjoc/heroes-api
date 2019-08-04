@@ -9,4 +9,5 @@ public interface HeroServiceInt {
     public List<Hero> getHeroes();
     public Hero getHero(String id);
     public List<Hero> searchHeroes(String term);
+    public Hero updateHero(Hero hero);
 }

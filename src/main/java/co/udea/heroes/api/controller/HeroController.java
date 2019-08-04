@@ -32,5 +32,8 @@ public class HeroController {
         return ResponseEntity.ok(heroService.searchHeroes(term));
     }
 
-    
+    @PutMapping("actualizar")
+    public ResponseEntity<Hero> updateHero(@RequestBody Hero hero){
+        return ResponseEntity.ok(heroService.updateHero(hero));
+    }
 }
