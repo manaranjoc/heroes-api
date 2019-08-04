@@ -1,0 +1,10 @@
+# Server properties
+server:
+  port: 8080
+# Spring properties
+spring:
+  # Heroku is active by default. This value can be overwritten by java arg param
+  profiles:
+    active: heroku
+  application:
+    name: tourofheroes-services
