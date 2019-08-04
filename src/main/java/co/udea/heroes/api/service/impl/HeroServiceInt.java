@@ -12,4 +12,6 @@ public interface HeroServiceInt {
     public Hero updateHero(Hero hero);
     public Hero addHero(Hero hero);
     public void deleteHero(int id);
+    public void deleteHero(Hero hero);
+    public Hero getHeroNo404(int id);
 }

@@ -28,6 +28,11 @@ public class HeroController {
         return ResponseEntity.ok(heroService.getHero(id));
     }
 
+    @GetMapping("consultar404")
+    public ResponseEntity<Hero> getHeroNo404(@RequestParam("id") int id){
+        return ResponseEntity.ok(heroService.getHeroNo404(id));
+    }
+
     @GetMapping("buscar")
     public ResponseEntity<List<Hero>> searchHeroes(@RequestParam("name") String term){
         return ResponseEntity.ok(heroService.searchHeroes(term));
@@ -45,5 +50,10 @@ public class HeroController {
     @DeleteMapping("borrar/{id}")
     public void deleteHero(@PathVariable int id){
         heroService.deleteHero(id);
+    }
+
+    @DeleteMapping("borrar")
+    public void deleteHero(@RequestBody Hero hero){
+        heroService.deleteHero(hero);
     }
 }

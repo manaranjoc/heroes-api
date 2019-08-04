@@ -1,5 +1,6 @@
 package co.udea.heroes.api.service.impl;
 
+import co.udea.heroes.api.exceptions.ResourceNotFoundException;
 import co.udea.heroes.api.model.Hero;
 import co.udea.heroes.api.repository.HeroRepository;
 import org.springframework.stereotype.Service;
@@ -25,9 +26,18 @@ public class HeroService implements HeroServiceInt{
         if(posibleHero.isPresent()){
             return posibleHero.get();
         }else{
-            return null;
+            throw new ResourceNotFoundException();
         }
 
+    }
+
+    public Hero getHeroNo404(int id){
+        Optional<Hero> posibleHero = heroRepository.findById(id);
+        if(posibleHero.isPresent()){
+            return posibleHero.get();
+        }else{
+            return null;
+        }
     }
 
     public List<Hero> searchHeroes(String term){
@@ -44,5 +54,9 @@ public class HeroService implements HeroServiceInt{
 
     public void deleteHero(int id){
         heroRepository.deleteById(id);
+    }
+
+    public void deleteHero(Hero hero){
+        heroRepository.delete(hero);
     }
 }
