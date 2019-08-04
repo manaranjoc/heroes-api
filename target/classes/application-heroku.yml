@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://ec2-50-19-222-129.compute-1.amazonaws.com:5432/d52e0lj4sslc29?ssl=false&sslfactory=org.postgresql.ssl.NonValidatingFactory
+    driver-class-name: org.postgresql.Driver
+    username: eoipatbklcmqmn
+    password: 11f86ab5971267702de1238e2f5b7816d46832133082e29af24a09ec7de275af
