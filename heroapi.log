@@ -1288,3 +1288,4 @@ Caused by: org.postgresql.util.PSQLException: The hostname ec2-50-19-222-129.com
 2019-08-03 21:26:30.723  INFO 26180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2019-08-03 21:26:30.805  WARN 26180 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-03 21:26:30.991  INFO 26180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-03 21:26:30.996  INFO 26180 --- [main] co.udea.heroes.api.App                   : Started App in 9.885 seconds (JVM running for 11.042)
